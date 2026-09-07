@@ -11,7 +11,7 @@ public class Loan : Entity<LoanId>
     private DateTime BorrowedOn { get; set; }
     private DateTime DueDate { get; set; }
     public DateTime? ReturnedOn { get; private set; }
-    private LoanStatus Status { get;  set; }
+    public LoanStatus Status { get; private set; }
     public decimal Fine { get; private set; }
 
     private Loan(LoanId id, BookId bookId, MemberId memberId, DateTime borrowedOn, DateTime dueDate)
