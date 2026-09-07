@@ -9,7 +9,7 @@ public class Loan : Entity<LoanId>
     public BookId BookId { get; private set; }
     public MemberId MemberId { get; private set; }
     private DateTime BorrowedOn { get; set; }
-    private DateTime DueDate { get; set; }
+    public DateTime DueDate { get; private set; }
     public DateTime? ReturnedOn { get; private set; }
     public LoanStatus Status { get; private set; }
     public decimal Fine { get; private set; }
